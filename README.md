@@ -4,28 +4,28 @@
 
 University Catalog — это приложение, которое позволяет пользователям искать университеты по странам. Приложение предоставляет возможность получать информацию об университетах, включая название, страну, веб-страницу и домен.
 
-## Установка
+### Установка
 
-### С использованием Docker и docker-compose
-
-1. Убедитесь, что у вас установлен [Docker](https://docs.docker.com/get-docker/) и [docker-compose](https://docs.docker.com/compose/install/).
-
-2. Клонируйте репозиторий на свою локальную машину:
-https://hub.docker.com/r/alexborqa/universitycatalog
-и запустите контейнер.
-
-3. Скопируйте проект из репозитория:
+1. Скопируйте проект из репозитория:
 https://github.com/AlexBorQA/UniversityCatalog/
 
 (git clone git@github.com:AlexBorQA/UniversityCatalog.git)
 
-4. Откройте проект в IntelliJ IDEA.
+2. Запустите Docker-destop.
 
-5. Запустите приложение MongoDB Compass, подключите его по адресу `localhost:27017`.
+3. Откройте проект в IntelliJ IDEA.
 
-6. Запустите файл `Main.kt`.
+3. Запустите приложение MongoDB Compass, подключите его по адресу `localhost:27017`.
 
-## Использование
+4. Запустите сборку проекта.
+
+5. Запустите docker-compose.yml
+
+6. (опционально) проверяем доступ к бд в MongoDB по адресу localhost:27017
+
+7. Запустите файл `Main.kt`.
+
+#### Использование
 
 1. Введите страну (например, 'Russian Federation' или 'Russia', или просто 'RU') для получения списка университетов.
 
@@ -33,7 +33,7 @@ https://github.com/AlexBorQA/UniversityCatalog/
 
 3. Введите `exit`, чтобы завершить работу приложения.
 
-## Конфигурация
+##### Конфигурация
 
 Для работы с приложением убедитесь, что ваш MongoDB доступен по умолчанию:
 mongodb://localhost:27017
